@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+        <script src="tb-tab.jquery.js" type="text/javascript"></script>
+        <script type='text/javascript' >
+            $(function(){
+                $("#test_tb").tb({});
+            });
+            
+            function cl() {
+                console.log.apply(console, arguments);
+            }
+        </script>
+        
+        <style type='text/css' >
+            #test_tb{width:30%; padding:15px;font:12px Arial;color:#333}
+			
+            .tb-tabs {position:relative;z-index:2;margin:0px;padding:0px;}
+            .tb-tabs li{display:block;text-align: center;margin-right: 5px;background:#e4d7c6;font-size: 13px;float:left;}
+            .tb-tabs li a{display:block;padding: 8px 25px; text-decoration:none;}
+            .tb-tabs .tb-active{border:1px solid #F0EBE4;border-bottom:1px solid #fff;;background:#fff;font-weight:bold;}
+            .tb-tabs li a{color: #000000;}
+			.tb-content {position:relative;z-index:1;top:-1px;padding: 33px 0 0;}
+            div.tb-content div{padding:12px; border:1px solid #F0EBE4;line-height:16px;}			
+        </style>        
+        
+        <div id='test_tb'>
+            <ul class='tb-tabs'>
+                <li><a href='#oscar' >Oscar</a></li>
+                <li><a href='#grammy' class='tb-active'>Grammy</a></li>
+                <li><a href='#emmy' >Emmy</a></li>
+                <!--<li><a href='ajaxHtml.html'>Third</a></li>-->
+            </ul>
+            <div class='tb-content clear'>
+                <div id='oscar' >
+                    An Academy Award, also known as an Oscar, is an accolade bestowed by the American Academy of Motion Picture Arts and Sciences (AMPAS) to recognize excellence of professionals in the film industry, including directors, actors, and writers. The formal ceremony at which the awards are presented is one of the most prominent award ceremonies in the world, and is televised live in more than 100 countries annually. It is also the oldest award ceremony in the media; its equivalents, the Grammy Awards (for music), Emmy Awards (for television), and Tony Awards (for theatre) are modeled after the Academy.
+                </div>
+                <div id='grammy'>
+                    A Grammy Award (originally called Gramophone Award) — or Grammy — is an accolade by the National Academy of Recording Arts and Sciences of the United States to recognize outstanding achievement in the music industry. The annual awards ceremony features performances by prominent artists, and some of the awards of more popular interest are presented in a widely viewed televised ceremony. It is the music equivalent to the Emmy Awards for television, the Tony Award for stage and the Academy Awards for film.
+                </div>
+                <div id='emmy'>
+                    An Emmy Award, often referred to simply as the Emmy, is a television production award, similar in nature to the Peabody Awards but more focused on entertainment, and is considered the television equivalent to the Academy Awards (for film) and the Grammy Awards (for music).                    
+                </div>
+            </div>
+       </div>
+    </body>
+</html>
