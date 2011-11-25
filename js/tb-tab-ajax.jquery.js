@@ -1,5 +1,7 @@
 $(function(){
     $.fn.tb = function (params){
+        params = params || {} ;
+        
         var tabCont = $("div.tb-content > div",this);
         tabCont.hide().filter(':first').show();
         var tbDom = this;
