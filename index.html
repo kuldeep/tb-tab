@@ -4,14 +4,16 @@
     <body>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
         <script src="js/tb-tab.jquery.min.js" type="text/javascript"></script>
+        <script src="js/loady.jquery.min.js" type="text/javascript"></script>
         <script type='text/javascript' >
-            $(function(){
+            $(document).ready(function(){
                 $("#test_tb").tb();
+                $("#test_loady").loady();
             });
         </script>
         
         <style type='text/css' >
-            #test_tb{width:30%; padding:15px;font:12px Arial;color:#333}
+            #test_loady , #test_tb{width:30%; padding:15px;font:12px Arial;color:#333}
 			
             .tb-tabs {position:relative;z-index:2;margin:0px;padding:0px;}
             .tb-tabs li{display:block;text-align: center;margin-right: 5px;background:#e4d7c6;font-size: 13px;float:left;}
@@ -19,7 +21,10 @@
             .tb-tabs .tb-active{border:1px solid #F0EBE4;border-bottom:1px solid #fff;;background:#fff;font-weight:bold;}
             .tb-tabs li a{color: #000000;}
 			.tb-content {position:relative;z-index:1;top:-1px;padding: 33px 0 0;}
-            div.tb-content div{padding:12px; border:1px solid #F0EBE4;line-height:16px;}			
+            div.tb-content div{padding:12px; border:1px solid #F0EBE4;line-height:16px;}
+            
+            /*loady css*/
+            .loady{position:absolute;top:0;left:0;height:100%;width:100%;background:#eee url('img/loader.gif') center center no-repeat;opacity:0.8;filter:alpha(opacity=80)}
         </style>        
         
         <div id='test_tb'>
@@ -40,6 +45,11 @@
                     An Emmy Award, often referred to simply as the Emmy, is a television production award, similar in nature to the Peabody Awards but more focused on entertainment, and is considered the television equivalent to the Academy Awards (for film) and the Grammy Awards (for music).                    
                 </div>
             </div>
-       </div>
+        </div>
+        
+        <div id='test_loady'>
+            An Academy Award, also known as an Oscar, is an accolade bestowed by the American Academy of Motion Picture Arts and Sciences (AMPAS) to recognize excellence of professionals in the film industry, including directors, actors, and writers. The formal ceremony at which the awards are presented is one of the most prominent award ceremonies in the world, and is televised live in more than 100 countries annually. It is also the oldest award ceremony in the media; its equivalents, the Grammy Awards (for music), Emmy Awards (for television), and Tony Awards (for theatre) are modeled after the Academy.            
+        </div>
+        
     </body>
 </html>
